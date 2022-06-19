@@ -1,6 +1,6 @@
 "use strict";
 
-function communication() {
+var COMM = (function() {
     let greet = "Hello ",
         goodbbye = "So long ";
     
@@ -21,4 +21,4 @@ function communication() {
     return {
         greetUser: greeting
     };
-}
+})();
