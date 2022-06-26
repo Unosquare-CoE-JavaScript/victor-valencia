@@ -4,7 +4,7 @@
 .then(data => data.json())
 .then(obj => console.log(obj));*/
 
-let todo = {
+/*let todo = {
     completed: false,
     userId: 1,
     title: "Learn Promises"
@@ -19,6 +19,13 @@ fetch('https://sonplaceholder.typicode.com/todos/', {
 })
 .then(resp => resp.json())
 .then(obj => console.log(obj))
-.catch(reject => console.log(`Unable to create todo ${reject}`));
+.catch(reject => console.log(`Unable to create todo ${reject}`));*/
+
+(async function() {
+    let data=  await fetch('https://jsonplaceholder.typicode.com/todos/');
+
+    let res = await data.json();
+    console.log(res);
+})();
 
 console.log('Other code');
