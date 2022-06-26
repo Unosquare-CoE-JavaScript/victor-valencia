@@ -5,11 +5,18 @@ var MAINAPP = (function(namespace) {
 
     (async function() {
         try {
-            let data = await fetch(url + 'posts/'),
-            posts = await data.json();
-            namespace.posts = posts;
+            let p1 = await fetch(url + 'posts/'),
+                p2 = await fetch(url + 'comments/'),
+                p3 = await fetch(url + 'todos/');
+      
+
+            const res = await Promise.all([p1, p2, p3]);
+            namespace.posts = await res[0].json();
+            namespace.comments = await res[1].json();
+            namespace.todos = await res[2].json();
+            console.log('data loaded!');
         } catch(e) {
-            console.log(`Problem retrieving data: ${err}`);
+            console.log(`Problem retrieving data: ${e}`);
         }
     })();
 
