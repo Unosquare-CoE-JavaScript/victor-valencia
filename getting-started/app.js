@@ -27,9 +27,9 @@ if (a === null) {
 
 
 var obj = {
-    first: "Kyle",
-    last: "Simpson",
-    age: 39,
+    first: "Victoria",
+    last: "Valencia",
+    age: 32,
     specialties: ["JS", "Table Tennis"]
 };
 
@@ -45,9 +45,9 @@ for (let index = 0; index < array.length; index++) {
 
 // ===============Declaring and using variables=======
 
-var adult = true;
+/* var adult = true;
 if (adult) {
-    var firstName = "Kyle";
+    var firstName = "Victoria";
     // let age = 39;
     console.log("Shhh, this is a secret!");
 }
@@ -71,4 +71,31 @@ function hello(name) {
     console.log(`Hello, ${name}.`);
 }
 
-hello("Kyle");
+hello("Victoria"); */
+
+// ===================Functions========================
+
+// let awesomeFunction = ..
+// const awesomeFunction = ..
+var awesomeFunction = function (coolThings) {
+    // ..
+    return amazingStuff;
+};
+
+function greeting(myName) {
+    console.log(`Hello, ${myName}!`);
+}
+greeting("Victoria");
+
+var whatToSay = {
+    greeting() {
+        console.log("Hello!");
+    },
+    question() {
+        console.log("What's your name?");
+    },
+    answer() {
+        console.log("My name is Victoria.");
+    }
+};
+whatToSay.greeting();
