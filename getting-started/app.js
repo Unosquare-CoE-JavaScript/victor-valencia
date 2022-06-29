@@ -77,7 +77,7 @@ hello("Victoria"); */
 
 // let awesomeFunction = ..
 // const awesomeFunction = ..
-var awesomeFunction = function (coolThings) {
+/* var awesomeFunction = function (coolThings) {
     // ..
     return amazingStuff;
 };
@@ -98,4 +98,30 @@ var whatToSay = {
         console.log("My name is Victoria.");
     }
 };
-whatToSay.greeting();
+whatToSay.greeting(); */
+
+// ===============Comparisons================================
+
+function validation(expr1, expr2) {
+    return expr1 === expr2;
+}
+
+function poorValidation(expr1, expr2) {
+    return expr1 == expr2;
+}
+
+var x = [1, 2, 3];
+
+var y = x;
+
+console.log(validation(y, x));
+console.log(validation(y, [1, 2, 3]));
+console.log(validation(x, [1, 2, 3]));
+
+console.log(poorValidation(42, "42"));
+console.log(poorValidation(1, true));
+
+var arr = ["1", "10", "100", "1000"];
+for (let i = 0; i < arr.length && arr[i] < 500; i++) {
+    // will run 3 times
+}
