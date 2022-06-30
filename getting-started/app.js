@@ -102,7 +102,7 @@ whatToSay.greeting(); */
 
 // ===============Comparisons================================
 
-function validation(expr1, expr2) {
+/*function validation(expr1, expr2) {
     return expr1 === expr2;
 }
 
@@ -124,4 +124,4 @@ console.log(poorValidation(1, true));
 var arr = ["1", "10", "100", "1000"];
 for (let i = 0; i < arr.length && arr[i] < 500; i++) {
     // will run 3 times
-}
+}*/
